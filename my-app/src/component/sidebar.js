@@ -6,21 +6,12 @@ class sidebar extends Component {
   render() {
     return (
       <div className="sidebar">
-        <img
-          alt="book"
-          class="recipe-book"
-          src={book}
-        />
-        <img
-          alt="harvest"
-          class="harvest"
-          src={harvest}
-        />
-        <img
-          alt="chef"
-          class="male-chef"
-          src={chef}
-        />
+        <div className='sideupspace'/>
+        <img className="sideImage" src={book}/>
+        <div className="sideEmptySpace"/>
+        <img className="sideImage" src={harvest}/>
+        <div className="sideEmptySpace"/>
+        <img className="sideImage" src={chef}/>
       </div>
     );
   }

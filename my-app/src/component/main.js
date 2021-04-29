@@ -1,23 +1,29 @@
 import { Component } from "react";
 import Latest from "./recipe/Latest";
 import Popular from "./recipe/Popular";
-import ViewRecipe from "./recipe/Viewrecipe";
-import UserMinimun from "./users/Userlistminimum";
+import MainViewRecipe from "./recipe/MainViewRecipe";
+import TopContributors from "./users/TopContributors";
 
 class main extends Component {
 
   render() {
     return(
-      <div className='main'>
-        <div className='upside'>
-          <UserMinimun />
-          <Popular />
-          <ViewRecipe />
+      <div className="main">
+    <div className="mainmargin" />
+    <div className="midarea">
+        <div className="midmargin"/>
+        <div className="midcontent">
+          <TopContributors/>
+          <Popular/>
+          <MainViewRecipe/>
         </div>
-        <div className='downside'>
+        <div className="midcontent">
           <Latest />
         </div>
-      </div>
+        <div className="midmargin"/>
+    </div>
+    <div className="mainmargin" />
+</div>
     );
   }
 }

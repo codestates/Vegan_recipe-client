@@ -15,41 +15,43 @@ class Latest extends Component {
     const tempdata = [{
       img: '../../img/itemimg.png',
       tag: 'FRUIT',
-      time: '5min',
+      time: '5minss',
       name: 'APPLE JUICE'
     },{
       img: '../../img/itemimg.png',
       tag: 'FRUIT',
-      time: '5min',
-      name: 'APPLE JUICE'
+      time: '5minwqqw',
+      name: 'APPLEqweqwe JUICE'
     },{
       img: '../../img/itemimg.png',
       tag: 'FRUIT',
       time: '5min',
-      name: 'APPLE JUICE'
+      name: 'APP123123LE JUICE'
     }]
-    // const listItems = tempdata.map((data, idx) => (
-    //   <div classname='latestitems' key={idx}>
-    //     {/* <img src={data.img} alt=''/> */}
-    //     <img src={imgg} alt=''/>
-    //     <p> {data.tag} {data.time}</p>
-    //     <div>{data.name}</div>
-    //   </div>
-    //   ))
-
-    return(
-    <div className='latest_main'>
-      {/* {listItems} */}
-      {tempdata.map((data, idx) => (
-      <div className='latestitems' key={idx}>
-        {/* <img src={data.img} alt=''/> */}
-        <img className='latest_img' src={imgg} alt=''/>
-        <p> {data.tag} {data.time}</p>
-        <div>{data.name}</div>
+    console.log(tempdata)
+    return (
+      <div className="latest_main">
+        <div className="Latelytitle">
+          Lately
+        </div>
+        <div className="Latelycontent">
+        {tempdata.map((data,idx) => (
+            <div key={idx} className="Latelyitem">
+              <img className="mainLatelyimg" src={imgg} />
+              <div className="Latelyfont1">
+                <span className="latelyTag">{data.tag}</span>
+                <div className='latelyspace'/>
+                <div className="latelyLine"/>
+                <div className='latelyspace'/>
+                <span className="latelyTime">{data.time}</span>
+              </div>
+              {/* <div className="Latelyfont2">{data.time}</div> */}
+              <div className="latelyName">{data.name}</div>
+            </div>
+        ))}
+        </div>
       </div>
-      ))}
-    </div>
-    )}
+    );}
 }
 
 export default Latest;

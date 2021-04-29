@@ -1,101 +1,371 @@
+body{
+  transform:scale(0.7);
+  transform-origin: left top;
+  margin-left: 20px;
+  margin-top: 20px;
+}
 .App {
-  text-align: center;
+  width: 1920px;
+  height: 1080px;
   display: flex;
-  position: absolute;
-  background: #FFFFFF;
   border-radius: 40px;
+}
+
+.sideEmptySpace {
+  height: 65.50px;
+}
+.sideImage {
+  width: 38px;
+  height: 38px;
+}
+.sideupspace {
+  height: 192px;
+}
+.sidebar {
+  width: 128px;
+  height: 1080px;
+  background-color: rgba(143, 178, 126, 0.15);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 .right {
   display: flex;
   flex-direction: column;
 }
-.sidebar {
-  /* width: 30px; */
-  /* height: 1080px; */
-  background: rgba(143, 179, 126, 0.15);
-  padding: 130px 15px 0px 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.recipe-book {
-  margin-bottom: 66px;
-  opacity: 0.8;
-  width: 30px;
-  height: 30px;
-}
-.harvest {
-  margin-bottom: 66px;
-  opacity: 0.8;
-  width: 30px;
-  height: 30px;
-}
-.male-chef {
-  margin-bottom: 66px;
-  opacity: 0.8;
-  width: 30px;
-  height: 30px;
-}
 .topbar {
   height: 114px;
+  width: 1793px;
+  background-color: rgb(222, 222, 222);
   display: flex;
-  justify-content:space-between;
 }
-.check_login {
-  border-radius: 100px;
-  padding: 3px 3px 3px 3px;
-  background-color: rgba(226, 235, 239, 1);
-  width: 96px;
-  height: 30px;
-  align-items: right;
+.topuserwrap {
+  height: 114px;
+  width: 1317px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .logo {
+  height: 114px;
+  width: 476px;
+}
+.topuser {
+  height: 60px;
+  width: 196px;
   border-radius: 100px;
-  padding: 3px 3px 3px 3px;
-  background-color: rgba(226, 235, 239, 1);
-  width: 96px;
-  height: 30px;
-}
-.main{
-  height: 955px;
-  width: 806px;
-}
-.latest_main {
   display: flex;
   justify-content:space-between;
+  align-content: center;
+  align-items: center;
+  background-color: #E2EBEF;
 }
-.latestitems {
-  height: 300px;
-  width: 250px;
+.topUserName {
+  font-size: larger;
+  margin-left: 15px;
 }
-.latest_img {
-  height: 100px;
-  width: 200px;
+.topspace {
+  height: 114px;
+  width: 53px;
 }
-.upside {
+.loginimage {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+.main {
+  width: 1793px;
+  height: 966px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mainmargin {
+  width: 185px;
+  height: 966px;
+}
+.midarea {
+  width: 1423px;
+  height: 966px;
   display: flex;
-  justify-content:space-between;
+  flex-direction: column;
 }
-.userlist {
-  display: flex;
-}
-.userlist_img {
+.midmargin {
+  width: 1423px;
   height: 45px;
-  width: 45px;
 }
-.recipe_table {
+.midcontent {
+  width: 1423px;
+  height: 438px;
   display: flex;
-  text-align: center;
+  justify-content: space-between;
 }
-.arrow {
-  height: 15px;
+.Latelytitle {
+  width: 1423px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.Latelycontent {
+  width: 1423px;
+  height: 356px;
+  display: flex;
+  justify-content:space-between;
+}
+.Latelyitem {
+  height: 352px;
+  width: 360px;
+}
+.mainLatelyimg{
+  height: 240px;
+  width: 360px;
+}
+.Latelyfont1 {
+  height: 52px;
+  width: 361px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.latelyLine {
+  width: 20px;
+  height: 1px;
+  background-color: #6e6e6e;
+}
+.latelyspace {
   width: 15px;
+  height: 1px;
 }
-.arrowdiv {
+.latelyTag {
+  /* font-family: Poppins; */
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #F5556E;
+}
+.latelyTime {
+  /* font-family: Poppins; */
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #b49d9d;
+}
+.latelyName {
+  /* font-family: Poppins; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #121212;
+  ;
+}
+.TopContributors {
+  height: 430px;
+  width: 360px;
+}
+.ContributorsHeader {
+  width: 360px;
+  height: 68px;
+}
+.ContributorsTitle {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.ContributorsUserlist {
+  width: 360px;
+  height: 91px;
+  display: flex;
+}
+.ContributorsUserImage {
+  height: 60px;
+  width: 60px;
+  border-radius: 200px;
+}
+.ContributorsSpace {
+  height: 60px;
+  width: 20px;
+}
+.ContributorsUserInfo {
+  display: flex;
+  flex-direction: column;
+}
+.ContributorsUserSpace {
+  height: 8.5px;
+  width: 20px;
+}
+.ContributorsTitleSpace {
+  height: 15px;
+  width: 20px;
+}
+.ContributorsUserName{
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;  
+}
+.ContributorsUserArticle {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #4e627a;
+}
+.PopularMain {
+  height: 430px;
+  width: 360px;  
+}
+.PopularHeader {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;  
+}
+.PopularUpSpace {
+  height: 36px;
+  width: 344px;
+}
+.PopularTitleTable {
+  height: 65px;
   display: flex;
   align-items: center;
 }
-.main_recipe_userinfo {
+.PopularTitle {
+  height: 64px;
+  width: 314px;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.PopularArrow {
+  height: 18.528247833251953px;
+  width: 15px;
+  align-items: center;  
+}
+.PopularGood {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #777777;
+}
+.PopularLine {
+  opacity: 0.20;
+  width: 339.50;
+  height: 1px;
+  background-color: #6e6e6e;
+}
+.PopularDownSpace {
+  height: 20px;
+}
+.PopularDownSpace2 {
+  height: 40px;
+}
+.MainViewRecipeImage {
+  height: 185px;
+  width: 360px;
+}
+.MainViewRecipeContentArea {
+  height: 205px;
+  width: 360px;
   display: flex;
 }
-
+.MainViewRecipeSpace {
+  height: 205px;
+  width: 30px;
+}
+.MainViewRecipeMidArea {
+  height: 205px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.MainViewRecipeUpSpace {
+  height: 18px;
+  width: 284px;
+}
+.MainViewTagTimeArea {
+  height: 24px;
+  width: 284px;
+  display:flex;  
+  align-items: center;
+}
+.MainViewRecipeTitle {
+  height: 65px;
+  width: 284px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;  
+}
+.MainViewRecipeContent {
+  height: 78px;
+  width: 285px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #7d7d7d;
+}
+.MainViewRecipeLine {
+  opacity: 0.20;
+  width: 285px;
+  height: 1px;
+  background-color: #6e6e6e;
+}
+.MainViewRecipeUserArea {
+  display: flex;
+  align-items: center;
+}
+.MainViewRecipeUserImage {
+  height: 19.673202514648438px;
+  width: 28.905893325805664px;
+  border-radius: 200px;
+}
+.MainViewRecipeUserName {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;  
+}
