@@ -1,38 +1,101 @@
 .App {
   text-align: center;
+  display: flex;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 40px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.right {
   display: flex;
   flex-direction: column;
+}
+.sidebar {
+  /* width: 30px; */
+  /* height: 1080px; */
+  background: rgba(143, 179, 126, 0.15);
+  padding: 130px 15px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.recipe-book {
+  margin-bottom: 66px;
+  opacity: 0.8;
+  width: 30px;
+  height: 30px;
+}
+.harvest {
+  margin-bottom: 66px;
+  opacity: 0.8;
+  width: 30px;
+  height: 30px;
+}
+.male-chef {
+  margin-bottom: 66px;
+  opacity: 0.8;
+  width: 30px;
+  height: 30px;
+}
+.topbar {
+  height: 114px;
+  display: flex;
+  justify-content:space-between;
+}
+.check_login {
+  border-radius: 100px;
+  padding: 3px 3px 3px 3px;
+  background-color: rgba(226, 235, 239, 1);
+  width: 96px;
+  height: 30px;
+  align-items: right;
+}
+.logo {
+  border-radius: 100px;
+  padding: 3px 3px 3px 3px;
+  background-color: rgba(226, 235, 239, 1);
+  width: 96px;
+  height: 30px;
+}
+.main{
+  height: 955px;
+  width: 806px;
+}
+.latest_main {
+  display: flex;
+  justify-content:space-between;
+}
+.latestitems {
+  height: 300px;
+  width: 250px;
+}
+.latest_img {
+  height: 100px;
+  width: 200px;
+}
+.upside {
+  display: flex;
+  justify-content:space-between;
+}
+.userlist {
+  display: flex;
+}
+.userlist_img {
+  height: 45px;
+  width: 45px;
+}
+.recipe_table {
+  display: flex;
+  text-align: center;
+}
+.arrow {
+  height: 15px;
+  width: 15px;
+}
+.arrowdiv {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.main_recipe_userinfo {
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
