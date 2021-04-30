@@ -20,40 +20,40 @@ function RecipeComment () {
     // }  랜덤 5개 선택해서 페이지에 노출 
 
 
-    // const tempdata = {
-    //   tag: "FRUIT",
-    //   time: "5 min",
-    //   title: "Simple Juice Recipes to boost your immune system",
-    //   content:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //   username: "Andrea Wise",
-    //   comments: [
-    //     {
-    //       username: "KimLucky",
-    //       time: "5min",
-    //       comment:
-    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //     },
-    //     {
-    //       username: "KimLucky",
-    //       time: "5min",
-    //       comment:
-    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //     },
-    //     {
-    //       username: "KimLucky",
-    //       time: "5min",
-    //       comment:
-    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //     },
-    //     {
-    //       username: "KimLucky",
-    //       time: "5min",
-    //       comment:
-    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //     },
-    //   ],
-    // };
+    const tempdata = {
+      tag: "FRUIT",
+      time: "5 min",
+      title: "Simple Juice Recipes to boost your immune system",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      username: "Andrea Wise",
+      comments: [
+        {
+          username: "KimLucky",
+          time: "5min",
+          comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        {
+          username: "KimLucky",
+          time: "5min",
+          comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        {
+          username: "KimLucky",
+          time: "5min",
+          comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+        {
+          username: "KimLucky",
+          time: "5min",
+          comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        },
+      ],
+    };
     return (
       <div className="RecipeCommentContainer">
         {/* 레피시 내용 출력 */}

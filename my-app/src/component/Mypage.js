@@ -3,8 +3,18 @@ import imgg from "../img/avatar.png";
 import imggg from "../img/inputimage1.png";
 import articleimg from "../img/user.png";
 
+import { selectRecipe } from '../actions/index';
+import { useSelector, useDispatch } from 'react-redux';
+
+
 
 function Mypage () {
+
+  //kido - axios를 통해 유정 정보와 모든 레시피를 받아옴
+  // const  dispatch = useDispatch();
+  // dispatch(selectRecipe(axios로 받아온 데이터 선별에서 전달)) 상태 변화 하기
+  // const  state = useSelector(state => state.dataReducer) 현재 상태 불러오기
+  // const {recipeList} = state
 
     const tempcuruserdata = {
       email: "Kimlucky-for@gmail.com",
