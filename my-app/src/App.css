@@ -1,9 +1,9 @@
-body{
+/* body{
   transform:scale(0.9);
   transform-origin: left top;
   margin-left: 20px;
   margin-top: 20px;
-}
+} */
 .App {
   width: 1920px;
   height: 1080px;
@@ -132,9 +132,9 @@ body{
   align-items: center;
 }
 .latelyLine {
-  width: 20px;
+  width: 15px;
   height: 1px;
-  background-color: #6e6e6e;
+  background-color: #a6a6a6;
 }
 .latelyspace {
   width: 15px;
@@ -752,4 +752,364 @@ input:focus {
   color: #ffffff;
   font-size: 20px;
   border:none;
+}
+.RecipeContainer {
+  width: 1793px;
+  height: 966px;
+  display: flex;
+}
+.RecipeLeftEmptyArea {
+  height: 966px;
+  width: 78px;  
+}
+.RecipeSearchTopEmptyArea {
+  height: 59px;
+  width: 320px;
+}
+.RecipeSearchInputArea {
+  height: 39px;
+  width: 320px;
+  display: flex;
+  border-bottom: solid black 1px;
+}
+.RecipeSearchImageArea {
+  height: 42px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+.RecipeSearchImage {
+  height: 25.5px;
+  width: 25.5px;  
+}
+.RecipeSearchInputTextArea {
+  height: 37px;
+  width: 276px;
+  padding-left: 5px;
+}
+.RecipeSearchInput {
+  height: 37px;
+  width: 265px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.RecipeMidEmptyArea {
+  height: 966px;
+  width: 89px; 
+}
+.RecipeRightArea {
+  height: 966px;
+  width: 1160px; 
+}
+.RecipeRightEmptyArea {
+  height: 59px;
+  width: 1200;
+}
+.LatestSixContainer {
+  height: 800px;
+  width: 1200px;  
+}
+.LatestSixHeader {
+  height: 64px;
+  width: 1200px;  
+}
+.LatestSixHeaderTitle {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.LatestSixAllPrint {
+  height: 736px;
+  width: 1200px;
+  display: flex; 
+  flex-wrap: wrap;
+}
+.LatestOneViewArea {
+  height: 384px;
+  width: 400px;  
+}
+.LatestOneView {
+  height: 384px;
+  width: 360px;
+}
+.LatestOneViewImage {
+  height: 240px;
+  width: 360px;
+}
+.LatestOneViewEmptyArea {
+  height: 20px;
+  width: 360px;
+}
+.LatestOneViewTagTime {
+  height: 20px;
+  width: 360px;
+  display: flex;
+  align-items: center;
+}
+.LatestOneViewTag {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  color:#F5556E;  
+}
+.LatestOneViewTime {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #121212;  
+}
+.LatestOneViewViewTitle {
+  height: 63px;
+  width: 360px;  
+}
+.LatestOneViewTitle {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;  
+}
+.RecipeCommentContainer {
+  height: 800px;
+  width: 1200px;  
+  display: flex;
+}
+.RecipeCommentContent {
+  height: 800px;
+  width: 570px;
+}
+.RecipeCommentEmptyArea {
+  height: 800px;
+  width: 60px; 
+}
+.RecipeMainImage {
+  height: 240px;
+  width: 570px;  
+}
+.RecipeMainUpEmptyArea {
+  height: 25px;
+  width: 570px;
+}
+.RecipeMainTagArea {
+  height: 20px;
+  width: 570px;
+  display: flex;
+}
+.RecipeTagEmptyArea {
+  height: 20px;
+  width: 40px;  
+}
+.RecipeMainTag {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  color: #40B2C9;  
+}
+.RecipeTagContentArea {
+  height: 20px;
+  width: 490px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.RecipeHeartImage {
+  height: 19.616235733032227px;
+  width: 18.686567306518555px;
+}
+.RecipeTitleContentArea {
+  display: flex;
+  height: 400px;
+  width: 570px;
+}
+.RecipeTitleContentEmptyArea {
+  height: 400px;
+  width: 40px;
+}
+.RecipeTitleContentShowArea {
+  height: 400px;
+  width: 490px;
+}
+.RecipeUserInfo {
+  height: 90px;
+  width: 570px;
+  border-top: solid #b9b9b9 0.5px;
+  display: flex;
+}
+.RecipeTitleArea {
+  height: 63px;
+  width: 490px;  
+}
+.RecipeContentArea {
+  height: 337px;
+  width: 490px;
+}
+.RecipeTitle {
+  font-family: Poppins;
+  font-size: 23px;
+  font-style:normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.RecipeContent {
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.RecipeUserInfoEmptyArea {
+  height: 90px;
+  width: 40px;
+}
+.RecipeUserInfoArea {
+  height: 90px;
+  width: 490px;
+  display: flex;
+  justify-content:space-between;
+}
+.RecipeUserArea {
+  height: 90px;
+  width: 150px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.RecipeUserHeartArea {
+  height: 90px;
+  width: 100px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.RecipeUserImage {
+  height: 35.22012710571289px;
+  width: 43.135135650634766px;
+  border-radius: 200px;  
+}
+.RecipeBookmartImage {
+  height: 23.616235733032227px;
+  width: 22.686567306518555px;
+}
+.RecipeCommentInputArea {
+  height: 65px;
+  width: 570px;
+  display: flex;
+  border-bottom: solid #b9b9b9 1px;
+}
+.RecipeCommentArea {
+  height: 65px;
+  width: 455px; 
+  display: flex; 
+  align-items: center;
+  margin-left: 25px;
+}
+.RecipeCommentButtonArea {
+  height: 65px;
+  width: 115px;
+  display: flex; 
+  align-items: center;
+}
+.CommentInputArea {
+  height: 37px;
+  width: 430px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.InputCommentButton {
+  height: 41.32841491699219px;
+  width: 77.51243591308594px;
+  background-color: #232323;
+  color: #ffffff;
+}
+.InputCommentButton:hover {
+  height: 41.32841491699219px;
+  width: 77.51243591308594px;
+  background-color: #848484;
+  color: #ffffff;
+}
+.CurRecipeCommentArea {
+  height: 735px;
+  width: 570px;
+}
+.CurRecipeCommentUpEmptyArea {
+  height: 30px;
+  width: 570px;
+}
+.CurRecipeCommentDownArea {
+  height: 80px;
+  width: 570px;
+  display: flex;
+}
+.CurRecipeCommentSideEmptyArea {
+  height: 80px;
+  width: 25px;
+}
+.CurRecipeCommentPrintArea {
+  height: 80px;
+  width: 520px;
+}
+.CurRecipeComment {
+  height: 60px;
+  width: 520px;
+}
+.CurRecipeCommentText{
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color:#848484;  
+}
+.CurRecipeCommentUserArea {
+  height: 20px;
+  width: 520px;
+  display: flex;
+  align-items: center;
+}
+.CurRecipeCommentUsername {
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #40B2C9;  
+}
+.CurRecipeCommentTime {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #121212;  
 }

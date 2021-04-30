@@ -5,6 +5,7 @@ import Topbar from './component/topbar';
 import Main from './component/main';
 import Signup from './component/Signup'
 import Mypage from './component/Mypage';
+import Recipe from './component/recipe';
 
 class App extends Component {
 
@@ -16,31 +17,11 @@ class App extends Component {
           <Topbar />
           {/* <Main /> */}
           {/* <Signup /> */}
-          <Mypage/>
+          {/* <Mypage/> */}
+          <Recipe/>
         </div>
       </div>
     )
   }
 }
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
 export default App;
