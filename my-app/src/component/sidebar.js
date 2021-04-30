@@ -2,8 +2,10 @@ import { Component } from "react";
 import book from '../img/recipe-book.png';
 import harvest from '../img/harvest.png';
 import chef from '../img/male-chef.png';
-class sidebar extends Component {
-  render() {
+
+
+function sidebar () {
+
     return (
       <div className="sidebar">
         <div className='sideupspace'/>
@@ -15,6 +17,6 @@ class sidebar extends Component {
       </div>
     );
   }
-}
+
 
 export default sidebar;

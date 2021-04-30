@@ -2,8 +2,10 @@ import { Component } from "react";
 import imgg from "../img/avatar.png";
 import imggg from "../img/inputimage1.png";
 import articleimg from "../img/user.png";
-class Mypage extends Component {
-  render() {
+
+
+function Mypage () {
+
     const tempcuruserdata = {
       email: "Kimlucky-for@gmail.com",
       username: "KimLucky",
@@ -186,5 +188,5 @@ class Mypage extends Component {
       </div>
     );
   }
-}
+
 export default Mypage;

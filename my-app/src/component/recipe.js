@@ -2,8 +2,10 @@ import { Component } from "react";
 import searcimg from "../img/search.png"
 import LatestSixView from "./recipe/LatestSixView";
 import RecipeComment from "./recipe/RecipeComment";
-class Recipe extends Component {
-  render() {
+
+
+function Recipe () {
+
 
     return(
       <div className="RecipeContainer">
@@ -29,5 +31,5 @@ class Recipe extends Component {
       </div>
     )
   }
-}
+
 export default Recipe;

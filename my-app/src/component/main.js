@@ -4,9 +4,9 @@ import Popular from "./recipe/Popular";
 import MainViewRecipe from "./recipe/MainViewRecipe";
 import TopContributors from "./users/TopContributors";
 
-class main extends Component {
+function main () {
 
-  render() {
+
     return(
       <div className="main">
     <div className="mainmargin" />
@@ -26,6 +26,6 @@ class main extends Component {
 </div>
     );
   }
-}
+
 
 export default main;

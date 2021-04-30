@@ -2,8 +2,10 @@ import { Component } from "react";
 import imgg from "../img/avatar.png"
 import imggg from "../img/inputimage1.png"
 
-class Signup extends Component {
-  render() {
+
+function Signup (){
+
+
 
     return(
       <div className='SignupPage'>
@@ -57,6 +59,6 @@ class Signup extends Component {
       </div>
     )
   }
-}
+
 
 export default Signup

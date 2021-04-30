@@ -1,8 +1,8 @@
 import { Component } from "react";
 import imgg from "../../img/itemimg.png";
 
-class LatestSixView extends Component {
-  render() {
+function LatestSixView () {
+
     const tempdata = [
       {
         tag: "FRUIT",
@@ -65,5 +65,5 @@ class LatestSixView extends Component {
       </div>
     );
   }
-}
+
 export default LatestSixView;

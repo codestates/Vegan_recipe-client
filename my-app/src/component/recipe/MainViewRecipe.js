@@ -1,8 +1,8 @@
 import { Component } from "react";
 import imgg from "../../img/itemimg.png";
 import imggg from "../../img/user.png";
-class MainViewRecipe extends Component {
-  render() {
+function MainViewRecipe () {
+
     const tempdata = [
       {
         tag: "FRUIT",
@@ -45,6 +45,6 @@ class MainViewRecipe extends Component {
       </div>
     );
   }
-}
+
 
 export default MainViewRecipe;
