@@ -3,6 +3,8 @@ import { Component } from 'react';
 import Sidebar from './component/sidebar';
 import Topbar from './component/topbar';
 import Main from './component/main';
+import Signup from './component/Signup'
+import Mypage from './component/Mypage';
 
 class App extends Component {
 
@@ -12,7 +14,9 @@ class App extends Component {
         <Sidebar />
         <div className='right'>
           <Topbar />
-          <Main />
+          {/* <Main /> */}
+          {/* <Signup /> */}
+          <Mypage/>
         </div>
       </div>
     )

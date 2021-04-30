@@ -1,5 +1,5 @@
 body{
-  transform:scale(0.7);
+  transform:scale(0.9);
   transform-origin: left top;
   margin-left: 20px;
   margin-top: 20px;
@@ -368,4 +368,388 @@ body{
   line-height: 13px;
   letter-spacing: 0.30000001192092896px;
   text-align: left;  
+}
+
+.SignupPage {
+  width: 1793px;
+  height: 966px;
+  display: flex;
+  background-image: url(./img/background-signup.png);
+  background-size: cover;
+}
+.SignupLeftArea {
+  height: 966px;
+  width: 195px;
+}
+.SignupRightArea {
+  height: 1598px;
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+}
+.SignupTopArea {
+  height: 250px;
+  width: 355px;
+}
+.SignupInputArea {
+  height: 55px;
+  width: 355px;
+  background-color: #ffffff;
+  display: flex;  
+}
+.SignupInputEmptyArea {
+  height: 50px;
+  width: 356px;  
+}
+.SignupInputImage {
+  height: 55px;
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SignupInputText {
+  height: 55px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SignupImage {
+  height: 40px;
+  width: 40px;
+}
+.SignupImage2 {
+  height: 20px;
+  width: 20px;
+}
+input:focus {
+  outline: none;
+}
+.InputEmail {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.InputPassword {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.InputPassword2 {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.InputUsername {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.SignupButton {
+  height: 55px;
+  width: 355px;
+  background-color: #3C64B1;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.SignupButton:hover {
+  height: 55px;
+  width: 355px;
+  background-color: #112344;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.Mypage {
+  width: 1793px;
+  height: 966px;
+  display: flex;
+  background-image: url(./img/background-mypage.png);
+  background-size: cover;
+}
+.MypageLeftArea {
+  height: 966px;
+  width: 233px;  
+}
+.MypageLeftArea2 {
+  height: 966px;
+  width: 112px;  
+}
+.MypageInputArea {
+  width: 355px;
+  height: 966px;
+}
+.MypageInputTopArea {
+  width: 355px;  
+  height: 169px;
+}
+.MypageCurEmail {
+  height: 55px;
+  width: 355px;
+  background-color: #ffffff;
+  display: flex;
+}
+.MypageCurUsername {
+  height: 55px;
+  width: 355px;
+  background-color: #ffffff;
+  display: flex;
+}
+.MypageUpEmptyArea {
+  height: 23px;
+  width: 197px;
+}
+.MypageEditUsernameInput{
+  height: 55px;
+  width: 355px;
+  background-color: #ffffff;
+  display: flex;
+}
+.MypageShowText {
+  height: 55px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+.EditInputUsername {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.EditUsernameButton {
+  height: 55px;
+  width: 355px;
+  background-color: #3C64B1;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.EditUsernameButton:hover {
+  height: 55px;
+  width: 355px;
+  background-color: #112344;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.EditInputPassword {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.EditInputPassword2 {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.EditPasswordButton {
+  height: 55px;
+  width: 355px;
+  background-color: #3C64B1;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.EditPasswordButton:hover {
+  height: 55px;
+  width: 355px;
+  background-color: #112344;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.MypageArticlesView {
+  height: 966px;
+  width: 586px;
+}
+.MypageArticlestTopArea {
+  width: 586px;
+  height: 169px;
+}
+.MypageArticlesDivided {
+  width: 586px;
+  height: 584px;
+  display: flex;
+}
+.MypageArticles {
+  height: 584px;
+  width: 293px;
+}
+.MypageArticlesHeader {
+  height: 40px;
+  width: 293px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;    
+}
+.MypageArticlesEmptyArea {
+  height: 27px;
+  width: 293px;  
+}
+.MypageArticle {
+  height: 66px;
+  width: 293px;
+  display: flex;
+  align-items: center;
+}
+.MypageArticleUserImage {
+  height: 66px;
+  width: 75px;
+}
+.ArticleUserImage {
+  height: 60px;
+  width: 60px;
+  border-radius: 200px;
+}
+.MypageArticleUserInfo {
+  height: 66px;
+  width: 218px;
+  display: flex;  
+  flex-direction: column;
+  /* align-items: center; */
+}
+.ArticleUsername {
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;  
+  margin-top: 8px;
+}
+.ArticleCount {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: left;  
+  color: #777777;
+}
+.MypageInputRecipe {
+  width: 356px;
+  height: 966px;
+}
+.MypageInputRecipeUpEmptyArea {
+  width: 356px;
+  height: 169px;
+}
+.MypageInputRecipeTitle {
+  height: 56px;
+  width: 356px;
+  display: flex;
+  background-color: #ffffff;
+}
+.MypageInputRecipeTitleImage {
+  height: 56px;
+  width: 45px;  
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.MypageInputRecipeImage {
+  height: 20px;
+  width: 20px;
+}
+.MypageInputRecipeTitleArea {
+  height: 56px;
+  width: 311px;
+  display: flex;
+  align-items: center;
+}
+.MypageInputRecipeTitleBox {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.MypageInputRecipeMidEmptyArea {
+  height: 35px;
+  width: 356px;
+}
+.MypageInputRecipeContents {
+  height: 405px;
+  width: 356px;  
+  background-color: #ffffff;
+  display: flex;
+}
+.MypageInputRecipeContestLeftArea {
+  height: 405px;
+  width: 43px;
+}
+.MypageInputRecipeContestImage {
+  height: 70px;
+  width: 43px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;  
+}
+.MypageInputRecipeContestRightAreaInEmpty {
+  height: 14px;
+  width: 313px;  
+}
+.MypageRecipeContentInput {
+  height: 383px;
+  width: 270px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.MypageInputRecipeButton {
+  height: 55px;
+  width: 355px;
+  background-color: #3C64B1;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.MypageInputRecipeButton:hover {
+  height: 55px;
+  width: 355px;
+  background-color: #112344;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
 }
