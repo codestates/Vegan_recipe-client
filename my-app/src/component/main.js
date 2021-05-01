@@ -1,8 +1,10 @@
 import { Component } from "react";
-import Latest from "./recipe/Latest";
-import Popular from "./recipe/Popular";
-import MainViewRecipe from "./recipe/MainViewRecipe";
+import Latest from "./recipes/Latest";
+import Popular from "./recipes/Popular";
+import MainViewRecipe from "./recipes/MainViewRecipe";
 import TopContributors from "./users/TopContributors";
+import { Link } from 'react-router-dom';
+
 
 function main () {
 
@@ -15,7 +17,7 @@ function main () {
         <div className="midcontent">
           <TopContributors/>
           <Popular/>
-          <MainViewRecipe/>
+          <Link to='/recipecomment'> <MainViewRecipe/> </Link>
         </div>
         <div className="midcontent">
           <Latest />

@@ -1,7 +1,7 @@
 import { Component } from "react";
 import searcimg from "../img/search.png"
-import LatestSixView from "./recipe/LatestSixView";
-import RecipeComment from "./recipe/RecipeComment";
+import LatestSixView from "./recipes/LatestSixView";
+import RecipeComment from "./recipes/RecipeComment";
 
 
 function Recipe () {
@@ -25,8 +25,8 @@ function Recipe () {
         <div className="RecipeRightArea">
           <div className="RecipeRightEmptyArea"/>
           {/* 최근 등록된 레시피 출력 ! 조건문으로 스테이트에 따라 레시피 조회창으로 이동 */}
-          {/* <LatestSixView/> */}
-          <RecipeComment />
+          <LatestSixView/>
+          {/* <RecipeComment /> */}
         </div>
       </div>
     )

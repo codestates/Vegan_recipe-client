@@ -6,8 +6,12 @@ import Main from './component/main';
 import Signup from './component/Signup'
 import Mypage from './component/Mypage';
 import Recipe from './component/recipe';
+import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 
 class App extends Component {
+
+  
+
 
   render() {
     return(
@@ -15,13 +19,15 @@ class App extends Component {
         <Sidebar />
         <div className='right'>
           <Topbar />
-          {/* <Main /> */}
-          {/* <Signup /> */}
-          {/* <Mypage/> */}
+            <Switch> {/* 메인 페이지의 변화 */}
+          {/* <Route path ='/' render={()=> (<Main />)} */}
+          {/* <Route path ='/signup' render={()=> <Signup />)} */}
+          {/* <Route path ='/mypage' render={()=> <Mypage/>)} */}
+            </Switch>
           <Recipe/>
         </div>
       </div>
     )
   }
 }
-export default App;
+export default withRouter(App);

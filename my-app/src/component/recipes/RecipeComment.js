@@ -8,16 +8,13 @@ import { useSelector, useDispatch } from 'react-redux';
 
 function RecipeComment () {
 
-    // kido - axios로 데이터를 받은 다음 
-    //     const state = useSelector(state => state.dataReducer)
-    //     const {recipeList}=state
-    //     const dispatch = useDispatch();
-
-
-
-    //    const handleClick = (item) => {
-    //    dispatch(selectRecipe(item)) // reducer로 상태 변경 
-    // }  랜덤 5개 선택해서 페이지에 노출 
+    //   axios로 데이터를 받은 다음 
+    //   const dispatch = useDispatch();
+    //   const handleClick = (item) => {
+    //   dispatch(selectRecipe(item)) // reducer로 상태 변경 
+    //   랜덤 5개 선택해서 페이지에 노출 
+    //   const state = useSelector(state => state.dataReducer)
+    //   const {recipeList}=state
 
 
     const tempdata = {
