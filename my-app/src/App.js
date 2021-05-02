@@ -6,6 +6,7 @@ import Main from './component/main';
 import Signup from './component/Signup'
 import Mypage from './component/Mypage';
 import Recipe from './component/recipe';
+import Material from './component/material';
 
 class App extends Component {
 
@@ -18,7 +19,8 @@ class App extends Component {
           {/* <Main /> */}
           {/* <Signup /> */}
           {/* <Mypage/> */}
-          <Recipe/>
+          {/* <Recipe/> */}
+          <Material/>
         </div>
       </div>
     )

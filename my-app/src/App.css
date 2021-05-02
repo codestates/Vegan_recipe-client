@@ -1113,3 +1113,52 @@ input:focus {
   text-align: left;
   color: #121212;  
 }
+.MaterialContainer {
+  width: 1793px;
+  height: 966px;
+  display: flex;
+}
+.MaterialLeftEmptyArea {
+  height: 966px;
+  width: 78px;  
+}
+.MaterialSearchTopEmptyArea {
+  height: 59px;
+  width: 320px;
+}
+/* .MaterialSearchInputArea {
+  height: 700px;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+} */
+.MaterialOneViewArea {
+  height: 40px;
+  width: 106px;
+}
+.MaterialOneInfo {
+  height: 20px;
+  width: 106px;  
+  display: flex;
+}
+.MaterialCheckBox {
+  height: 20px;
+  width: 20px;  
+}
+.MaterialInfoEmptyArea {
+  height: 20px;
+  width: 10px;
+}
+.MaterialInfoTitleArea {
+  height: 20px;
+  width: 76px;
+}
+.MaterialInfoTitle {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: left;  
+}
