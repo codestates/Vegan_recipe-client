@@ -1162,3 +1162,57 @@ input:focus {
   letter-spacing: 1px;
   text-align: left;  
 }
+.UserLeftEmptyArea {
+  height: 60px;
+  width: 320px;
+}
+.CurUserInfoArea {
+  height: 60px;
+  width: 320px;
+  display: flex;
+}
+.CurUserInfoEmptyArea {
+  height: 60px;
+  width: 15px;
+}
+.CurUserInfoNameArea {
+  height: 60px;
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-top: 12px;
+}
+.AllUserContainer {
+  height: 800px;
+  width: 1200px;  
+}
+/* .AllUserPrintArea {
+  height: 736px;
+  width: 1200px;
+  display: flex; 
+  flex-wrap: wrap;
+} */
+.UserInfoPrint {
+  height: 90px;
+  width: 300px;  
+}
+.CurUserName {
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;  
+}
+.CurUserArticles {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #a6a6a6;
+}
