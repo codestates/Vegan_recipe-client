@@ -1216,3 +1216,42 @@ input:focus {
   text-align: left;
   color: #a6a6a6;
 }
+.LoginContainer {
+  height: 310px;
+  width: 400px;  
+  display: flex;
+}
+.LoginUpRowEmptyArea {
+  height: 310px;
+  width: 22px;  
+}
+.LoginArea {
+  height: 65px;
+  width: 356px;  
+}
+.LoginMidEmptyArea {
+  height: 30px;
+  width: 356px;  
+}
+.LoginInputImage {
+  height: 55px;
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LoginImage {
+  height: 40px;
+  width: 40px;
+}
+.LoginImage2 {
+  height: 20px;
+  width: 20px;
+}
+.LoginInputText {
+  height: 55px;
+  width: 356px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
