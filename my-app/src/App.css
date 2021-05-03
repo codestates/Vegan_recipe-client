@@ -1113,3 +1113,106 @@ input:focus {
   text-align: left;
   color: #121212;  
 }
+.MaterialContainer {
+  width: 1793px;
+  height: 966px;
+  display: flex;
+}
+.MaterialLeftEmptyArea {
+  height: 966px;
+  width: 78px;  
+}
+.MaterialSearchTopEmptyArea {
+  height: 59px;
+  width: 320px;
+}
+/* .MaterialSearchInputArea {
+  height: 700px;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+} */
+.MaterialOneViewArea {
+  height: 40px;
+  width: 106px;
+}
+.MaterialOneInfo {
+  height: 20px;
+  width: 106px;  
+  display: flex;
+}
+.MaterialCheckBox {
+  height: 20px;
+  width: 20px;  
+}
+.MaterialInfoEmptyArea {
+  height: 20px;
+  width: 10px;
+}
+.MaterialInfoTitleArea {
+  height: 20px;
+  width: 76px;
+}
+.MaterialInfoTitle {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: left;  
+}
+.UserLeftEmptyArea {
+  height: 60px;
+  width: 320px;
+}
+.CurUserInfoArea {
+  height: 60px;
+  width: 320px;
+  display: flex;
+}
+.CurUserInfoEmptyArea {
+  height: 60px;
+  width: 15px;
+}
+.CurUserInfoNameArea {
+  height: 60px;
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-top: 12px;
+}
+.AllUserContainer {
+  height: 800px;
+  width: 1200px;  
+}
+/* .AllUserPrintArea {
+  height: 736px;
+  width: 1200px;
+  display: flex; 
+  flex-wrap: wrap;
+} */
+.UserInfoPrint {
+  height: 90px;
+  width: 300px;  
+}
+.CurUserName {
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;  
+}
+.CurUserArticles {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #a6a6a6;
+}

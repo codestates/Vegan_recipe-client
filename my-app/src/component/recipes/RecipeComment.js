@@ -1,20 +1,14 @@
-import { Component } from "react";
+// import { Component } from "react";
 import mainimage from "../../img/recipemainimage.png";
 import heartimage from "../../img/heart.png";
 import userimg from "../../img/user.png";
 import bookmark from "../../img/bookmark.png";
-import { selectRecipe } from '../../actions/index';
-import { useSelector, useDispatch } from 'react-redux';
+// import { selectRecipe } from '../../actions/index';
+// import { useSelector, useDispatch } from 'react-redux';
 
-function RecipeComment () {
+function RecipeComment ({state}) {
+  console.log(state)
 
-    //   axios로 데이터를 받은 다음 
-    //   const dispatch = useDispatch();
-    //   const handleClick = (item) => {
-    //   dispatch(selectRecipe(item)) // reducer로 상태 변경 
-    //   랜덤 5개 선택해서 페이지에 노출 
-    //   const state = useSelector(state => state.dataReducer)
-    //   const {recipeList}=state
 
 
     const tempdata = {

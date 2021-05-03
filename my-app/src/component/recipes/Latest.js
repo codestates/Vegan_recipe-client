@@ -38,7 +38,7 @@ class Latest extends Component {
         </div>
         <div className="Latelycontent">
         {tempdata.map((data,idx) => (
-            <Link to='/recipecomment'>
+            <Link to='/recipecomment' style={{ color: 'inherit', textDecoration: 'none' }} >
               <div key={idx} className="Latelyitem">
               <img className="mainLatelyimg" src={imgg} />
               <div className="Latelyfont1">
