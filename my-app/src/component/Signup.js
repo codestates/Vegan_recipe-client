@@ -10,10 +10,12 @@ class Signup extends Component {
     this.state = {
       email: "",
       password: "",
-      verifiedpassword: "",
-      username: "",
+      // verifiedpassword: "",
+      name: "",
       errorMessage: ""
     };
+
+    this.handleSignup = this.handleSignup.bind(this)
     this.handleInputValue = this.handleInputValue.bind(this)
   }
 
@@ -21,25 +23,28 @@ class Signup extends Component {
     this.setState({ [key]: e.target.value });
   };
 
-  // handleSignup = () => {
-  //   const { email, password, verifiedpassword, username } = this.state;
-  //   if (!email || !password || !verifiedpassword || !username) {
-  //     this.setState({
-  //       errorMessage: "모든 항목은 필수입니다"
-  //     });
-  //     return;
-  //   }
-  //   axios.post(url, {
-  //       email: email,
-  //       password: password,
-  //       verifiedpassword: verifiedpassword,
-  //       username: username,
-  //   })
-  //   .then((res)=> {
-  //     this.props.history.push("/") // 메인 페이지로 이동 
-  //   })
-  //   .catch((err) => console.log(err));
-  // }
+  handleSignup = () => {
+    console.log(this.state)
+    const { email, password, name } = this.state;
+    console.log(email)
+    if (!email || !password || !name) {
+      this.setState({
+        errorMessage: "모든 항목은 필수입니다"
+      });
+      return;
+    }
+    axios.post("http://18.116.115.62:4000/users/signup", {
+        email: email,
+        password: password,
+        // verifiedpassword: verifiedpassword,
+        name: name,
+    })
+    .then((res)=> {
+      console.log(res)
+      this.props.history.push("/") // 메인 페이지로 이동 
+    })
+    .catch((err) => console.log(err));
+  }
 
 render(){
     return(
@@ -87,12 +92,12 @@ render(){
             </div>
             <div className="SignupInputText">
               <input type="text" placeholder="사용하실 이름을 입력해주세요" className="InputUsername"
-              onChange={this.handleInputValue("username")}/>
+              onChange={this.handleInputValue("name")}/>
             </div>
           </div>
           <div className="SignupInputEmptyArea"/>
 
-          <button className="SignupButton" type='submit' >Sign Up</button>
+          <button className="SignupButton" type='submit' onClick={this.handleSignup}>Sign Up</button>
 
         </div>
       </div>

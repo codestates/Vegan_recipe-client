@@ -3,15 +3,17 @@ import mainimage from "../../img/recipemainimage.png";
 import heartimage from "../../img/heart.png";
 import userimg from "../../img/user.png";
 import bookmark from "../../img/bookmark.png";
+import { logout } from "../../actions";
 // import { selectRecipe } from '../../actions/index';
 // import { useSelector, useDispatch } from 'react-redux';
 
-function RecipeComment ({state}) {
-  console.log(state)
+function RecipeComment (props) {
+  const {location} = props
+  console.log(location.state) /// 선택한 prop전달 받음
 
 
 
-    const tempdata = {
+    const tempdata = [{
       tag: "FRUIT",
       time: "5 min",
       title: "Simple Juice Recipes to boost your immune system",
@@ -44,7 +46,13 @@ function RecipeComment ({state}) {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         },
       ],
-    };
+    },
+    {}
+  ]
+
+
+
+
     return (
       <div className="RecipeCommentContainer">
         {/* 레피시 내용 출력 */}

@@ -1,34 +1,42 @@
 import './App.css';
-import { Component } from 'react';
+import { React } from 'react';
 import Sidebar from './component/sidebar';
 import Topbar from './component/topbar';
 import Main from './component/main';
 import Signup from './component/Signup'
+import Login from './component/login'
+import Material from './component/material'
+import User from './component/user'
 import Mypage from './component/Mypage';
 import Recipe from './component/recipe';
-import Material from './component/material';
-import User from './component/user';
+import RecipeComment from './component/recipes/RecipeComment'
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
-class App extends Component {
+function App() {
 
   
 
 
-  render() {
     return(
+      <Router>
       <div className='App'>
         <Sidebar />
         <div className='right'>
           <Topbar />
-          {/* <Main /> */}
-          {/* <Signup /> */}
-          {/* <Mypage/> */}
-          {/* <Recipe/> */}
-          {/* <Material/> */}
-          <User />
+            <Switch> 
+              <Route exact={true} path ="/"> <Main /> </Route>
+              <Route path ="/login"> <Login /> </Route>
+              <Route path ='/signup' ><Signup /> </Route>
+              <Route path ='/mypage' ><Mypage /> </Route>
+              <Route path ="/recipecomment" component={RecipeComment} />
+              <Route path ="/recipe"> <Recipe /> </Route>
+              <Route path ="/material"> <Material /> </Route>
+              <Route path ="/user"> <User /> </Route>
+            </Switch> 
         </div>
       </div>
+      </Router>
     )
   }
-}
-export default withRouter(App);
+
+export default App;

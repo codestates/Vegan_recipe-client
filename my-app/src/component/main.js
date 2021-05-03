@@ -1,4 +1,4 @@
-import { Component } from "react";
+
 import Latest from "./recipes/Latest";
 import Popular from "./recipes/Popular";
 import MainViewRecipe from "./recipes/MainViewRecipe";
@@ -17,7 +17,7 @@ function main () {
         <div className="midcontent">
           <TopContributors/>
           <Popular/>
-          <Link to='/recipecomment'> <MainViewRecipe/> </Link>
+          <Link to='/recipecomment' style={{ color: 'inherit', textDecoration: 'none' }} > <MainViewRecipe/> </Link>
         </div>
         <div className="midcontent">
           <Latest />

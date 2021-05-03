@@ -24,9 +24,10 @@ function LatestSixView ({value}) {
 
     recipeList.map(data => {
       if(data.recipeInfo.title.includes(datavalue)||data.userInfo.username.includes(datavalue)){
-        viewList.push(data)
+        return viewList.push(data)
       }
     })
+
 
     // const addview = (el) => {
     //   const views = {
@@ -77,7 +78,7 @@ function LatestSixView ({value}) {
         <div className="LatestSixAllPrint">
           {/* 반복문으로 스테이트에 있는 최근의 게시물 6개를 출력합니다. */}
           {viewList.map((data, idx) => (
-            <Link to={{ pathname: '/recipecomment', state: { value: value} }} style={{ color: 'inherit', textDecoration: 'none' }}>
+            <Link to={{ pathname: '/recipecomment', state:{value: data}}}  style={{ color: 'inherit', textDecoration: 'none' }}>
             <div key={idx} className="LatestOneViewArea">
               <div className="LatestOneView">
                 <img alt="" src={imgg} className="LatestOneViewImage" />
@@ -103,3 +104,4 @@ function LatestSixView ({value}) {
   }
 
 export default LatestSixView;
+
