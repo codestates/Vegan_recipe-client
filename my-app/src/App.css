@@ -1,0 +1,1304 @@
+body{
+  transform:scale(0.6);
+  transform-origin: left top;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #f3f3f3;
+}
+.App {
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  border-radius: 40px;
+  background-color: #ffffff;
+}
+
+.sideEmptySpace {
+  height: 65.50px;
+}
+.sideImage {
+  width: 38px;
+  height: 38px;
+}
+.sideupspace {
+  height: 192px;
+}
+.sidebar {
+  width: 128px;
+  height: 1080px;
+  background-color: rgba(143, 178, 126, 0.15);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.topbar {
+  height: 114px;
+  width: 1793px;
+  /* background-color: rgb(222, 222, 222); */
+  display: flex;
+}
+.topuserwrap {
+  height: 114px;
+  width: 1317px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo {
+  height: 114px;
+  width: 476px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+/* .logo_image {
+  height: 80px;
+  width: 100px;
+} */
+.topuser {
+  height: 60px;
+  width: 196px;
+  border-radius: 100px;
+  display: flex;
+  justify-content:space-between;
+  align-content: center;
+  align-items: center;
+  background-color: #E2EBEF;
+}
+.topUserName {
+  font-size: larger;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.topspace {
+  height: 114px;
+  width: 53px;
+}
+.loginimage {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+.main {
+  width: 1793px;
+  height: 966px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mainmargin {
+  width: 185px;
+  height: 966px;
+}
+.midarea {
+  width: 1423px;
+  height: 966px;
+  display: flex;
+  flex-direction: column;
+}
+.midmargin {
+  width: 1423px;
+  height: 45px;
+}
+.midcontent {
+  width: 1423px;
+  height: 438px;
+  display: flex;
+  justify-content: space-between;
+}
+.Latelytitle {
+  width: 1423px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.Latelycontent {
+  width: 1423px;
+  height: 356px;
+  display: flex;
+  justify-content:space-between;
+}
+.Latelyitem {
+  height: 352px;
+  width: 360px;
+}
+.mainLatelyimg{
+  height: 240px;
+  width: 360px;
+}
+.Latelyfont1 {
+  height: 52px;
+  width: 361px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.latelyLine {
+  width: 15px;
+  height: 1px;
+  background-color: #a6a6a6;
+}
+.latelyspace {
+  width: 15px;
+  height: 1px;
+}
+.latelyTag {
+  /* font-family: Poppins; */
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #F5556E;
+}
+.latelyTime {
+  /* font-family: Poppins; */
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #b49d9d;
+}
+.latelyName {
+  /* font-family: Poppins; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #121212;
+  ;
+}
+.TopContributors {
+  height: 430px;
+  width: 360px;
+}
+.ContributorsHeader {
+  width: 360px;
+  height: 68px;
+}
+.ContributorsTitle {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.ContributorsUserlist {
+  width: 360px;
+  height: 91px;
+  display: flex;
+}
+.ContributorsUserImage {
+  height: 60px;
+  width: 60px;
+  border-radius: 200px;
+}
+.ContributorsSpace {
+  height: 60px;
+  width: 20px;
+}
+.ContributorsUserInfo {
+  display: flex;
+  flex-direction: column;
+}
+.ContributorsUserSpace {
+  height: 8.5px;
+  width: 20px;
+}
+.ContributorsTitleSpace {
+  height: 15px;
+  width: 20px;
+}
+.ContributorsUserName{
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;  
+}
+.ContributorsUserArticle {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #4e627a;
+}
+.PopularMain {
+  height: 430px;
+  width: 360px;  
+}
+.PopularHeader {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;  
+}
+.PopularUpSpace {
+  height: 36px;
+  width: 344px;
+}
+.PopularTitleTable {
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+.PopularTitle {
+  height: 64px;
+  width: 314px;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.PopularArrow {
+  height: 18.528247833251953px;
+  width: 15px;
+  align-items: center;  
+}
+.PopularGood {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #777777;
+}
+.PopularLine {
+  opacity: 0.20;
+  width: 339.50;
+  height: 1px;
+  background-color: #6e6e6e;
+}
+.PopularDownSpace {
+  height: 20px;
+}
+.PopularDownSpace2 {
+  height: 40px;
+}
+.MainViewRecipeImage {
+  height: 185px;
+  width: 360px;
+}
+.MainViewRecipeContentArea {
+  height: 205px;
+  width: 360px;
+  display: flex;
+}
+.MainViewRecipeSpace {
+  height: 205px;
+  width: 30px;
+}
+.MainViewRecipeMidArea {
+  height: 205px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.MainViewRecipeUpSpace {
+  height: 18px;
+  width: 284px;
+}
+.MainViewTagTimeArea {
+  height: 24px;
+  width: 284px;
+  display:flex;  
+  align-items: center;
+}
+.MainViewRecipeTitle {
+  height: 65px;
+  width: 284px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;  
+}
+.MainViewRecipeContent {
+  height: 78px;
+  width: 285px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #7d7d7d;
+}
+.MainViewRecipeLine {
+  opacity: 0.20;
+  width: 285px;
+  height: 1px;
+  background-color: #6e6e6e;
+}
+.MainViewRecipeUserArea {
+  display: flex;
+  align-items: center;
+}
+.MainViewRecipeUserImage {
+  height: 19.673202514648438px;
+  width: 28.905893325805664px;
+  border-radius: 200px;
+}
+.MainViewRecipeUserName {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;  
+}
+
+.SignupPage {
+  width: 1793px;
+  height: 966px;
+  display: flex;
+  background-image: url(./img/background-signup.png);
+  background-size: cover;
+}
+.SignupLeftArea {
+  height: 966px;
+  width: 195px;
+}
+.SignupRightArea {
+  height: 1598px;
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+}
+.SignupTopArea {
+  height: 250px;
+  width: 355px;
+}
+.SignupInputArea {
+  height: 55px;
+  width: 355px;
+  background-color: #ffffff;
+  display: flex;  
+}
+.SignupInputEmptyArea {
+  height: 50px;
+  width: 356px;  
+}
+.SignupInputImage {
+  height: 55px;
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SignupInputText {
+  height: 55px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SignupImage {
+  height: 40px;
+  width: 40px;
+}
+.SignupImage2 {
+  height: 20px;
+  width: 20px;
+}
+input:focus {
+  outline: none;
+}
+.InputEmail {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.InputPassword {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.InputPassword2 {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.InputUsername {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.SignupButton {
+  height: 55px;
+  width: 355px;
+  background-color: #3C64B1;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.SignupButton:hover {
+  height: 55px;
+  width: 355px;
+  background-color: #112344;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.Mypage {
+  width: 1793px;
+  height: 966px;
+  display: flex;
+  background-image: url(./img/background-mypage.png);
+  background-size: cover;
+}
+.MypageLeftArea {
+  height: 966px;
+  width: 233px;  
+}
+.MypageLeftArea2 {
+  height: 966px;
+  width: 112px;  
+}
+.MypageInputArea {
+  width: 355px;
+  height: 966px;
+}
+.MypageInputTopArea {
+  width: 355px;  
+  height: 169px;
+}
+.MypageCurEmail {
+  height: 55px;
+  width: 355px;
+  background-color: #ffffff;
+  display: flex;
+}
+.MypageCurUsername {
+  height: 55px;
+  width: 355px;
+  background-color: #ffffff;
+  display: flex;
+}
+.MypageUpEmptyArea {
+  height: 23px;
+  width: 197px;
+}
+.MypageEditUsernameInput{
+  height: 55px;
+  width: 355px;
+  background-color: #ffffff;
+  display: flex;
+}
+.MypageShowText {
+  height: 55px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+.EditInputUsername {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.EditUsernameButton {
+  height: 55px;
+  width: 355px;
+  background-color: #3C64B1;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.EditUsernameButton:hover {
+  height: 55px;
+  width: 355px;
+  background-color: #112344;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.EditInputPassword {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.EditInputPassword2 {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.EditPasswordButton {
+  height: 55px;
+  width: 355px;
+  background-color: #3C64B1;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.EditPasswordButton:hover {
+  height: 55px;
+  width: 355px;
+  background-color: #112344;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.MypageArticlesView {
+  height: 966px;
+  width: 586px;
+}
+.MypageArticlestTopArea {
+  width: 586px;
+  height: 169px;
+}
+.MypageArticlesDivided {
+  width: 586px;
+  height: 584px;
+  display: flex;
+}
+.MypageArticles {
+  height: 584px;
+  width: 293px;
+}
+.MypageArticlesHeader {
+  height: 40px;
+  width: 293px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;    
+}
+.MypageArticlesEmptyArea {
+  height: 27px;
+  width: 293px;  
+}
+.MypageArticle {
+  height: 66px;
+  width: 293px;
+  display: flex;
+  align-items: center;
+}
+.MypageArticleUserImage {
+  height: 66px;
+  width: 75px;
+}
+.ArticleUserImage {
+  height: 60px;
+  width: 60px;
+  border-radius: 200px;
+}
+.MypageArticleUserInfo {
+  height: 66px;
+  width: 218px;
+  display: flex;  
+  flex-direction: column;
+  /* align-items: center; */
+}
+.ArticleUsername {
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;  
+  margin-top: 8px;
+}
+.ArticleCount {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: left;  
+  color: #777777;
+}
+.MypageInputRecipe {
+  width: 356px;
+  height: 966px;
+}
+.MypageInputRecipeUpEmptyArea {
+  width: 356px;
+  height: 169px;
+}
+.MypageInputRecipeTitle {
+  height: 56px;
+  width: 356px;
+  display: flex;
+  background-color: #ffffff;
+}
+.MypageInputRecipeTitleImage {
+  height: 56px;
+  width: 45px;  
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.MypageInputRecipeImage {
+  height: 20px;
+  width: 20px;
+}
+.MypageInputRecipeTitleArea {
+  height: 56px;
+  width: 311px;
+  display: flex;
+  align-items: center;
+}
+.MypageInputRecipeTitleBox {
+  height: 40px;
+  width: 260px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.MypageInputRecipeMidEmptyArea {
+  height: 35px;
+  width: 356px;
+}
+.MypageInputRecipeContents {
+  height: 405px;
+  width: 356px;  
+  background-color: #ffffff;
+  display: flex;
+}
+.MypageInputRecipeContestLeftArea {
+  height: 405px;
+  width: 43px;
+}
+.MypageInputRecipeContestImage {
+  height: 70px;
+  width: 43px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;  
+}
+.MypageInputRecipeContestRightAreaInEmpty {
+  height: 14px;
+  width: 313px;  
+}
+.MypageRecipeContentInput {
+  height: 383px;
+  width: 270px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.MypageInputRecipeButton {
+  height: 55px;
+  width: 355px;
+  background-color: #3C64B1;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.MypageInputRecipeButton:hover {
+  height: 55px;
+  width: 355px;
+  background-color: #112344;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.RecipeContainer {
+  width: 1793px;
+  height: 966px;
+  display: flex;
+}
+.RecipeLeftEmptyArea {
+  height: 966px;
+  width: 78px;  
+}
+.RecipeSearchTopEmptyArea {
+  height: 59px;
+  width: 320px;
+}
+.RecipeSearchInputArea {
+  height: 39px;
+  width: 320px;
+  display: flex;
+  border-bottom: solid black 1px;
+}
+.RecipeSearchImageArea {
+  height: 42px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+.RecipeSearchImage {
+  height: 25.5px;
+  width: 25.5px;  
+}
+.RecipeSearchInputTextArea {
+  height: 37px;
+  width: 276px;
+  padding-left: 5px;
+}
+.RecipeSearchInput {
+  height: 37px;
+  width: 265px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.RecipeMidEmptyArea {
+  height: 966px;
+  width: 89px; 
+}
+.RecipeRightArea {
+  height: 966px;
+  width: 1160px; 
+}
+.RecipeRightEmptyArea {
+  height: 59px;
+  width: 1200;
+}
+.LatestSixContainer {
+  height: 800px;
+  width: 1200px;  
+}
+.LatestSixHeader {
+  height: 64px;
+  width: 1200px;  
+}
+.LatestSixHeaderTitle {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.LatestSixAllPrint {
+  height: 736px;
+  width: 1200px;
+  display: flex; 
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+.LatestOneViewArea {
+  height: 384px;
+  width: 400px;  
+}
+.LatestOneView {
+  height: 384px;
+  width: 360px;
+}
+.LatestOneViewImage {
+  height: 240px;
+  width: 360px;
+}
+.LatestOneViewEmptyArea {
+  height: 20px;
+  width: 360px;
+}
+.LatestOneViewTagTime {
+  height: 20px;
+  width: 360px;
+  display: flex;
+  align-items: center;
+}
+.LatestOneViewTag {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  color:#F5556E;  
+}
+.LatestOneViewTime {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #121212;  
+}
+.LatestOneViewViewTitle {
+  height: 63px;
+  width: 360px;  
+}
+.LatestOneViewTitle {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;  
+}
+.RecipeCommentContainer {
+  height: 800px;
+  width: 1200px;  
+  display: flex;
+}
+.RecipeCommentContent {
+  height: 800px;
+  width: 570px;
+}
+.RecipeCommentEmptyArea {
+  height: 800px;
+  width: 60px; 
+}
+.RecipeMainImage {
+  height: 240px;
+  width: 570px;  
+}
+.RecipeMainUpEmptyArea {
+  height: 25px;
+  width: 570px;
+}
+.RecipeMainTagArea {
+  height: 20px;
+  width: 570px;
+  display: flex;
+}
+.RecipeTagEmptyArea {
+  height: 20px;
+  width: 40px;  
+}
+.RecipeMainTag {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  color: #40B2C9;  
+}
+.RecipeTagContentArea {
+  height: 20px;
+  width: 490px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.RecipeHeartImage {
+  height: 19.616235733032227px;
+  width: 18.686567306518555px;
+}
+.RecipeTitleContentArea {
+  display: flex;
+  height: 400px;
+  width: 570px;
+}
+.RecipeTitleContentEmptyArea {
+  height: 400px;
+  width: 40px;
+}
+.RecipeTitleContentShowArea {
+  height: 400px;
+  width: 490px;
+}
+.RecipeUserInfo {
+  height: 90px;
+  width: 570px;
+  border-top: solid #b9b9b9 0.5px;
+  display: flex;
+}
+.RecipeTitleArea {
+  height: 63px;
+  width: 490px;  
+}
+.RecipeContentArea {
+  height: 337px;
+  width: 490px;
+}
+.RecipeTitle {
+  font-family: Poppins;
+  font-size: 23px;
+  font-style:normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.RecipeContent {
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.RecipeUserInfoEmptyArea {
+  height: 90px;
+  width: 40px;
+}
+.RecipeUserInfoArea {
+  height: 90px;
+  width: 490px;
+  display: flex;
+  justify-content:space-between;
+}
+.RecipeUserArea {
+  height: 90px;
+  width: 150px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.RecipeUserHeartArea {
+  height: 90px;
+  width: 100px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.RecipeUserImage {
+  height: 35.22012710571289px;
+  width: 43.135135650634766px;
+  border-radius: 200px;  
+}
+.RecipeBookmartImage {
+  height: 23.616235733032227px;
+  width: 22.686567306518555px;
+}
+.RecipeCommentInputArea {
+  height: 65px;
+  width: 570px;
+  display: flex;
+  border-bottom: solid #b9b9b9 1px;
+}
+.RecipeCommentArea {
+  height: 65px;
+  width: 455px; 
+  display: flex; 
+  align-items: center;
+  margin-left: 25px;
+}
+.RecipeCommentButtonArea {
+  height: 65px;
+  width: 115px;
+  display: flex; 
+  align-items: center;
+}
+.CommentInputArea {
+  height: 37px;
+  width: 430px;
+  border:none;
+  border-right:0px;
+  border-top:0px;
+  border-left:0px;
+  border-bottom:0px;
+}
+.InputCommentButton {
+  height: 41.32841491699219px;
+  width: 77.51243591308594px;
+  background-color: #232323;
+  color: #ffffff;
+}
+.InputCommentButton:hover {
+  height: 41.32841491699219px;
+  width: 77.51243591308594px;
+  background-color: #848484;
+  color: #ffffff;
+}
+.CurRecipeCommentArea {
+  height: 735px;
+  width: 570px;
+}
+.CurRecipeCommentUpEmptyArea {
+  height: 30px;
+  width: 570px;
+}
+.CurRecipeCommentDownArea {
+  height: 80px;
+  width: 570px;
+  display: flex;
+}
+.CurRecipeCommentSideEmptyArea {
+  height: 80px;
+  width: 25px;
+}
+.CurRecipeCommentPrintArea {
+  height: 80px;
+  width: 520px;
+}
+.CurRecipeComment {
+  height: 60px;
+  width: 520px;
+}
+.CurRecipeCommentText{
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color:#848484;  
+}
+.CurRecipeCommentUserArea {
+  height: 20px;
+  width: 520px;
+  display: flex;
+  align-items: center;
+}
+.CurRecipeCommentUsername {
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #40B2C9;  
+}
+.CurRecipeCommentTime {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #121212;  
+}
+.MaterialContainer {
+  width: 1793px;
+  height: 966px;
+  display: flex;
+}
+.MaterialLeftEmptyArea {
+  height: 966px;
+  width: 78px;  
+}
+.MaterialSearchTopEmptyArea {
+  height: 59px;
+  width: 320px;
+}
+/* .MaterialSearchInputArea {
+  height: 700px;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+} */
+.MaterialOneViewArea {
+  height: 40px;
+  width: 106px;
+}
+.MaterialOneInfo {
+  height: 20px;
+  width: 106px;  
+  display: flex;
+}
+.MaterialCheckBox {
+  height: 20px;
+  width: 20px;  
+}
+.MaterialInfoEmptyArea {
+  height: 20px;
+  width: 10px;
+}
+.MaterialInfoTitleArea {
+  height: 20px;
+  width: 76px;
+}
+.MaterialInfoTitle {
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: left;  
+}
+.UserLeftEmptyArea {
+  height: 60px;
+  width: 320px;
+}
+.CurUserInfoArea {
+  height: 60px;
+  width: 320px;
+  display: flex;
+}
+.CurUserInfoEmptyArea {
+  height: 60px;
+  width: 15px;
+}
+.CurUserInfoNameArea {
+  height: 60px;
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-top: 12px;
+}
+.AllUserContainer {
+  height: 800px;
+  width: 1200px;  
+}
+/* .AllUserPrintArea {
+  height: 736px;
+  width: 1200px;
+  display: flex; 
+  flex-wrap: wrap;
+} */
+.UserInfoPrint {
+  height: 90px;
+  width: 300px;  
+}
+.CurUserName {
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;  
+}
+.CurUserArticles {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #a6a6a6;
+}
+.LoginContainer {
+  height: 966px;
+  width: 1793px;  
+  display: flex;
+  background-image: url(./img/login_background.png);
+  background-size: cover;
+}
+.LoginUpRowEmptyArea {
+  height: 310px;
+  width: 222px;  
+}
+.LoginUpEmptyArea {
+  height: 265px;
+  width: 356px; 
+}
+.LoginArea {
+  height: 800px;
+  width: 356px;  
+}
+.LoginMidEmptyArea {
+  height: 30px;
+  width: 356px;  
+}
+.LoginEmailArea {
+  height: 55px;
+  width: 356px;
+  display: flex;
+  background-color: #ffffff;
+}
+.LoginPasswordArea {
+  height: 55px;
+  width: 356px;
+  display: flex;
+  background-color: #ffffff;
+}
+.LoginInputImage {
+  height: 55px;
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LoginImage {
+  height: 40px;
+  width: 40px;
+}
+.LoginImage2 {
+  height: 20px;
+  width: 20px;
+}
+.LoginInputText {
+  height: 55px;
+  width: 298px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LoginButton {
+  height: 55px;
+  width: 356px;
+  background-color: #3C64B1;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.LoginButton:hover {
+  height: 55px;
+  width: 356px;
+  background-color: #112344;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
