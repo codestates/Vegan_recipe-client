@@ -1,6 +1,6 @@
 import { Component } from "react";
-import imgg from '../../img/itemimg.png'
-import { Link } from 'react-router-dom';
+import imgg from "../../img/itemimg.png";
+import { Link } from "react-router-dom";
 
 class Latest extends Component {
   constructor(props) {
@@ -9,53 +9,57 @@ class Latest extends Component {
     this.printLatestMain = this.printLatestMain.bind(this);
   }
 
-  printLatestMain() {
-    
-    // return listItems;
-  }
+  printLatestMain() {}
   render() {
-    const tempdata = [{
-      img: '../../img/itemimg.png',
-      tag: 'FRUIT',
-      time: '5minss',
-      name: 'APPLE JUICE'
-    },{
-      img: '../../img/itemimg.png',
-      tag: 'FRUIT',
-      time: '5minwqqw',
-      name: 'APPLEqweqwe JUICE'
-    },{
-      img: '../../img/itemimg.png',
-      tag: 'FRUIT',
-      time: '5min',
-      name: 'APP123123LE JUICE'
-    }]
-    console.log(tempdata)
+    const tempdata = [
+      {
+        img: "../../img/itemimg.png",
+        tag: "FRUIT",
+        time: "5minss",
+        name: "APPLE JUICE",
+      },
+      {
+        img: "../../img/itemimg.png",
+        tag: "FRUIT",
+        time: "5minwqqw",
+        name: "APPLEqweqwe JUICE",
+      },
+      {
+        img: "../../img/itemimg.png",
+        tag: "FRUIT",
+        time: "5min",
+        name: "APP123123LE JUICE",
+      },
+    ];
     return (
       <div className="latest_main">
-        <div className="Latelytitle">
-          Lately
-        </div>
+        <div className="Latelytitle">Lately</div>
         <div className="Latelycontent">
-        {tempdata.map((data,idx) => (
-            <Link to='/recipecomment' style={{ color: 'inherit', textDecoration: 'none' }} >
-              <div key={idx} className="Latelyitem">
-              <img className="mainLatelyimg" src={imgg} />
-              <div className="Latelyfont1">
-                <span className="latelyTag">{data.tag}</span>
-                <div className='latelyspace'/>
-                <div className="latelyLine"/>
-                <div className='latelyspace'/>
-                <span className="latelyTime">{data.time}</span>
-              </div>
-              {/* <div className="Latelyfont2">{data.time}</div> */}
-              <div className="latelyName">{data.name}</div>
+          {tempdata.map((data, idx) => (
+            <div key={idx}>
+              <Link
+                to="/recipecomment"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                <div className="Latelyitem">
+                  <img className="mainLatelyimg" src={imgg} alt="" />
+                  <div className="Latelyfont1">
+                    <span className="latelyTag">{data.tag}</span>
+                    <div className="latelyspace" />
+                    <div className="latelyLine" />
+                    <div className="latelyspace" />
+                    <span className="latelyTime">{data.time}</span>
+                  </div>
+                  {/* <div className="Latelyfont2">{data.time}</div> */}
+                  <div className="latelyName">{data.name}</div>
+                </div>
+              </Link>
             </div>
-            </Link>
-        ))}
+          ))}
         </div>
       </div>
-    );}
+    );
+  }
 }
 
 export default Latest;

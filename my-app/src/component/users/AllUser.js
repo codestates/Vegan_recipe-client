@@ -4,11 +4,10 @@ import userImage from "../../img/user.png";
 class AllUser extends Component {
   constructor(props) {
     super(props);
-
-}
+  }
 
   render() {
-    let result
+    let result;
     const userTempData = [
       { name: "giseok5327@gmail.com", articles: 130 },
       { name: "KimLucky1", articles: 112 },
@@ -36,31 +35,41 @@ class AllUser extends Component {
       { name: "KimLucky", articles: 130 },
     ];
 
-    if(this.props.value===null){
-      result = userTempData 
+    if (this.props.value === null) {
+      result = userTempData;
+    } else {
+      result = userTempData.filter((el) => el.name.includes(this.props.value));
     }
-    else{
-      result = userTempData.filter(el => el.name.includes(this.props.value))
-
-    }
-    const UsersAreaHeight = (Math.ceil(userTempData.length / 4)) * 90;
+    const UsersAreaHeight = Math.ceil(userTempData.length / 4) * 90;
 
     return (
       <div className="AllUserContainer">
         <div className="LatestSixHeader">
           <span className="LatestSixHeaderTitle">Users</span>
         </div>
-        <div className="AllUserPrintArea" style={{width: 1200, height: {UsersAreaHeight}, display: "flex", "flex-wrap": "wrap"}}>
+        <div
+          className="AllUserPrintArea"
+          style={{
+            width: 1200,
+            height: { UsersAreaHeight },
+            display: "flex",
+            "flex-wrap": "wrap",
+          }}
+        >
           {result.map((data, idx) => (
-            <div className="UserInfoPrint" onClick={()=>{this.props.changeUser(data)}}>
+            <div
+              key={idx}
+              className="UserInfoPrint"
+              onClick={() => {
+                this.props.changeUser(data);
+              }}
+            >
               <div className="CurUserInfoArea">
                 <img src={userImage} alt="" className="CurUserImage" />
                 <div className="CurUserInfoEmptyArea" />
                 <div className="CurUserInfoNameArea">
                   <span className="CurUserName">{data.name}</span>
-                  <span className="CurUserArticles">
-                    {data.articles}
-                  </span>
+                  <span className="CurUserArticles">{data.articles}</span>
                 </div>
               </div>
             </div>

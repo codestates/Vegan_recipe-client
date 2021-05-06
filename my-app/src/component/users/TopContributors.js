@@ -13,15 +13,17 @@ class TopContributors extends Component {
       <div className="TopContributors">
         <div className="ContributorsHeader">
           <span className="ContributorsTitle">Top Contributors</span>
-          <div className='ContributorsTitleSpace'/>
-          {tempdata.map((data) => (
-            <div className="ContributorsUserlist">
+          <div className="ContributorsTitleSpace" />
+          {tempdata.map((data, idx) => (
+            <div key={idx} className="ContributorsUserlist">
               <img className="ContributorsUserImage" src={imgg} alt="" />
               <div className="ContributorsSpace" />
               <div className="ContributorsUserInfo">
-                <div className='ContributorsUserSpace'/>
+                <div className="ContributorsUserSpace" />
                 <span className="ContributorsUserName">{data.name}</span>
-                <span className="ContributorsUserArticle">{data.article} article</span>
+                <span className="ContributorsUserArticle">
+                  {data.article} article
+                </span>
               </div>
             </div>
           ))}

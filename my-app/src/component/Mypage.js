@@ -1,4 +1,3 @@
-
 import { getDefaultNormalizer } from "@testing-library/dom";
 import axios from "axios";
 import { Component } from "react";
@@ -9,65 +8,59 @@ import articleimg from "../img/user.png";
 // import { selectRecipe } from '../actions/index';
 // import { useSelector, useDispatch } from 'react-redux';
 
-
-
 class Mypage extends Component {
-
   constructor(props) {
     super(props);
-    this.state ={
+    this.state = {
       email: null,
       username: null,
-      title:null,
-      content:null
-    }
+      title: null,
+      content: null,
+    };
 
-    this.createRecipe = this.createRecipe.bind(this)
-    this.recipeCreator = this.recipeCreator.bind(this)
-    this.userinfo = this.userinfo.bind(this)
-}
-
+    this.createRecipe = this.createRecipe.bind(this);
+    this.recipeCreator = this.recipeCreator.bind(this);
+    this.userinfo = this.userinfo.bind(this);
+  }
 
   componentDidMount() {
-  this.userinfo();
+    this.userinfo();
   }
 
-  recipeCreator = (key)=>(e) => {
+  recipeCreator = (key) => (e) => {
     this.setState({ [key]: e.target.value });
-  }
+  };
 
-
-  userinfo = ()=>{
-      axios.get("http://13.59.132.30:4000/users/userinfo", {
+  userinfo = () => {
+    axios
+      .get("http://13.59.132.30:4000/users/userinfo", {
         headers: {
           authorization: `Bearer ${this.props.actoken}`,
           "Content-Type": "application/json",
         },
         withCredentials: true,
       })
-      .then(res =>{
+      .then((res) => {
         this.setState({
-          email : res.data.email, // 수정요함
-          username : res.data.name // 데이터 보고 수정요함.
-        })
+          email: res.data.email, // 수정요함
+          username: res.data.name, // 데이터 보고 수정요함.
+        });
+      });
+  };
+
+  createRecipe = () => {
+    axios
+      .post("http://13.59.132.30:4000/recipe/CreateRecipe", {
+        user_id: this.state.email,
+        title: this.state.title,
+        content: this.state.content,
       })
-  }
+      .then((res) => {});
+  };
 
-  createRecipe = ()=>{
-    axios.post("http://13.59.132.30:4000/recipe/CreateRecipe", {
-      user_id: this.state.email,
-      title: this.state.title,
-      content: this.state.content
-    })
-    .then(res => {
-    })
-
-  }
-
-
-render(){
-  console.log(this.props.actoken)
-      const tempcuruserdata = {
+  render() {
+    console.log(this.props.actoken);
+    const tempcuruserdata = {
       email: "Kimlucky-for@gmail.com",
       username: "KimLucky",
     };
@@ -79,7 +72,7 @@ render(){
       { username: "KimLucky", article: 140 },
       { username: "KimLucky", article: 140 },
     ];
-    
+
     return (
       <div className="Mypage">
         <div className="MypageLeftArea" />
@@ -168,8 +161,8 @@ render(){
               <div className="MypageArticlesHeader">내가 구독하는 사람들</div>
               <div className="MypageArticlesEmptyArea" />
               {/* 하단부터 반복문으로 유저정보에 따라 테이블 생성하여 사진과 이름 구독수 출력 */}
-              {temparticledata.map((data) => (
-                <div>
+              {temparticledata.map((data, idx) => (
+                <div key={idx}>
                   <div className="MypageArticle">
                     <div className="MypageArticleUserImage">
                       <img
@@ -193,8 +186,8 @@ render(){
               <div className="MypageArticlesHeader">나를 구독하는 사람들</div>
               <div className="MypageArticlesEmptyArea" />
               {/* 하단부터 반복문으로 유저정보에 따라 테이블 생성하여 사진과 이름 구독수 출력 */}
-              {temparticledata.map((data) => (
-                <div>
+              {temparticledata.map((data, idx) => (
+                <div key={idx}>
                   <div className="MypageArticle">
                     <div className="MypageArticleUserImage">
                       <img
@@ -225,10 +218,15 @@ render(){
               <img alt="" src={imggg} className="MypageInputRecipeImage" />
             </div>
             <div className="MypageInputRecipeTitleArea">
-              <input type="text" placeholder="레시피 이름을 입력해주세요" onChange={this.recipeCreator("title")} className="MypageInputRecipeTitleBox"/>
+              <input
+                type="text"
+                placeholder="레시피 이름을 입력해주세요"
+                onChange={this.recipeCreator("title")}
+                className="MypageInputRecipeTitleBox"
+              />
             </div>
           </div>
-          <div className="MypageInputRecipeMidEmptyArea"/>
+          <div className="MypageInputRecipeMidEmptyArea" />
           {/* 레시피 내용 입력창 */}
           <div className="MypageInputRecipeContents">
             <div className="MypageInputRecipeContestLeftArea">
@@ -237,14 +235,24 @@ render(){
               </div>
             </div>
             <div className="MypageInputRecipeContestRightArea">
-              <div className="MypageInputRecipeContestRightAreaInEmpty"/>
-              <input type="textarea" className="MypageRecipeContentInput" onChange={this.recipeCreator('content')} placeholder="조리방법을 입력해주세요"/>
-              <div className="MypageInputRecipeContestRightAreaInEmpty"/>
+              <div className="MypageInputRecipeContestRightAreaInEmpty" />
+              <input
+                type="textarea"
+                className="MypageRecipeContentInput"
+                onChange={this.recipeCreator("content")}
+                placeholder="조리방법을 입력해주세요"
+              />
+              <div className="MypageInputRecipeContestRightAreaInEmpty" />
             </div>
           </div>
-          <div className="MypageInputRecipeMidEmptyArea"/>
+          <div className="MypageInputRecipeMidEmptyArea" />
 
-          <button className="MypageInputRecipeButton" onClick={this.createRecipe}>Create Recipe</button>
+          <button
+            className="MypageInputRecipeButton"
+            onClick={this.createRecipe}
+          >
+            Create Recipe
+          </button>
         </div>
       </div>
     );

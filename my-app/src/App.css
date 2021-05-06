@@ -843,6 +843,7 @@ input:focus {
   width: 1200px;
   display: flex; 
   flex-wrap: wrap;
+  overflow-y: auto;
 }
 .LatestOneViewArea {
   height: 384px;
