@@ -40,4 +40,4 @@ IM 27기 첫 프로젝트로 4명이 모여 "풀뜯남"팀을 구성하였습니
 
 <a href="https://github.com/codestates/Vegan_recipe-server/files/6431855/spaces_-MZFxiMA0zCkrf6WMZep_pdf_3071228295.pdf">API Document🥑 </a>
 ## Wiki
-<a href="https://github.com/codestates/MySurpin-client/wiki">Our Wiki page🥑 </a>
+<a href="https://github.com/Lucky-kor/Vegan_recipe-client/wiki">Our Wiki page🥑 </a>
