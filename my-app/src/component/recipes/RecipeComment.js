@@ -1,15 +1,19 @@
-import { Component } from "react";
+// import { Component } from "react";
 import mainimage from "../../img/recipemainimage.png";
 import heartimage from "../../img/heart.png";
 import userimg from "../../img/user.png";
 import bookmark from "../../img/bookmark.png";
+import { logout } from "../../actions";
+// import { selectRecipe } from '../../actions/index';
+// import { useSelector, useDispatch } from 'react-redux';
 
-class RecipeComment extends Component {
-  render() {
+function RecipeComment ({value}) {
+
+
     const tempdata = {
       tag: "FRUIT",
       time: "5 min",
-      title: "Simple Juice Recipes to boost your immune system",
+      title: `${value}`,
       content:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       username: "Andrea Wise",
@@ -39,7 +43,11 @@ class RecipeComment extends Component {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         },
       ],
-    };
+    }
+
+
+
+
     return (
       <div className="RecipeCommentContainer">
         {/* 레피시 내용 출력 */}
@@ -63,7 +71,7 @@ class RecipeComment extends Component {
             <div className="RecipeTitleContentEmptyArea" />
             <div className="RecipeTitleContentShowArea">
               <div className="RecipeTitleArea">
-                <span className="RecipeTitle">{tempdata.title}</span>
+                <span className="RecipeTitle" >{tempdata.title}</span>
               </div>
               <div className="RecipeContentArea">
                 <span className="RecipeContent">{tempdata.content}</span>
@@ -146,6 +154,5 @@ class RecipeComment extends Component {
       </div>
     );
   }
-}
 
 export default RecipeComment;

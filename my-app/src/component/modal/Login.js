@@ -6,30 +6,58 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="LoginContainer">
-        <div className="LoginUpRowEmptyArea"/>
-        <div className="LoginArea">
-          <div className="LoginEmailArea">
-            <div className="LoginInputImage">
-              <img className="LoginImage" src={imgg} alt=''/>
+      <div className='SignupPage'>
+        <div className='SignupLeftArea'/>
+        <div className='SignupRightArea'>
+          <div className="SignupTopArea"/>
+
+          <div className="SignupInputArea">
+            <div className="SignupInputImage">
+              <img className="SignupImage" src={imgg} alt=''/>
             </div>
-            <div className="LoginInputText">
-              <input type="text" placeholder="이메일 주소를 입력해주세요" className="InputEmail"/>
-            </div>
-          </div>
-          <div className="LoginMidEmptyArea"/>
-          <div className="LoginPasswordArea">
-          <div className="LoginInputImage">
-              <img className="LoginImage2" src={imggg} alt=''/>
-            </div>
-            <div className="LoginInputText">
-              <input type="text" placeholder="비밀번호를 입력해주세요" className="InputPassword"/>
+            <div className="SignupInputText">
+              <input type="text" placeholder="이메일 주소를 입력해주세요" className="InputEmail"
+              onChange={this.handleInputValue("email")}/>
             </div>
           </div>
-          <div className="LoginMidEmptyArea"/>
-          <button className="LoginButton">Log in</button>
+          <div className="SignupInputEmptyArea"/>
+
+          <div className="SignupInputArea">
+            <div className="SignupInputImage">
+              <img className="SignupImage2" src={imggg} alt=''/>
+            </div>
+            <div className="SignupInputText">
+              <input type="password" placeholder="비밀번호를 입력해주세요" className="InputPassword" 
+              onChange={this.handleInputValue("password")}/>
+            </div>
+          </div>
+          <div className="SignupInputEmptyArea"/>
+
+          <div className="SignupInputArea">
+            <div className="SignupInputImage">
+              <img className="SignupImage2" src={imggg} alt=''/>
+            </div>
+            <div className="SignupInputText">
+              <input type="password" placeholder="비밀번호를 한번 더 입력해주세요" className="InputPassword2"
+              onChange={this.handleInputValue("verifiedpassword")}/>
+            </div>
+          </div>
+          <div className="SignupInputEmptyArea"/>
+
+          <div className="SignupInputArea">
+            <div className="SignupInputImage">
+              <img className="SignupImage" src={imgg} alt=''/>
+            </div>
+            <div className="SignupInputText">
+              <input type="text" placeholder="사용하실 이름을 입력해주세요" className="InputUsername"
+              onChange={this.handleInputValue("name")}/>
+            </div>
+          </div>
+          <div className="SignupInputEmptyArea"/>
+
+          <button className="SignupButton" type='submit' onClick={this.handleSignup}>Sign Up</button>
+
         </div>
-        <div className="LoginUpRowEmptyArea"/>
       </div>
     );
   }

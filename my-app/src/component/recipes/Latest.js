@@ -1,5 +1,7 @@
 import { Component } from "react";
 import imgg from '../../img/itemimg.png'
+import { Link } from 'react-router-dom';
+
 class Latest extends Component {
   constructor(props) {
     super(props);
@@ -36,7 +38,8 @@ class Latest extends Component {
         </div>
         <div className="Latelycontent">
         {tempdata.map((data,idx) => (
-            <div key={idx} className="Latelyitem">
+            <Link to='/recipecomment' style={{ color: 'inherit', textDecoration: 'none' }} >
+              <div key={idx} className="Latelyitem">
               <img className="mainLatelyimg" src={imgg} />
               <div className="Latelyfont1">
                 <span className="latelyTag">{data.tag}</span>
@@ -48,6 +51,7 @@ class Latest extends Component {
               {/* <div className="Latelyfont2">{data.time}</div> */}
               <div className="latelyName">{data.name}</div>
             </div>
+            </Link>
         ))}
         </div>
       </div>

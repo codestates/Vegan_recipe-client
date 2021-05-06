@@ -1,14 +1,16 @@
-/* body{
-  transform:scale(0.9);
+body{
+  transform:scale(0.6);
   transform-origin: left top;
   margin-left: 20px;
   margin-top: 20px;
-} */
+  background-color: #f3f3f3;
+}
 .App {
   width: 1920px;
   height: 1080px;
   display: flex;
   border-radius: 40px;
+  background-color: #ffffff;
 }
 
 .sideEmptySpace {
@@ -29,6 +31,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 .right {
   display: flex;
@@ -37,7 +41,7 @@
 .topbar {
   height: 114px;
   width: 1793px;
-  background-color: rgb(222, 222, 222);
+  /* background-color: rgb(222, 222, 222); */
   display: flex;
 }
 .topuserwrap {
@@ -50,7 +54,14 @@
 .logo {
   height: 114px;
   width: 476px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
+/* .logo_image {
+  height: 80px;
+  width: 100px;
+} */
 .topuser {
   height: 60px;
   width: 196px;
@@ -64,6 +75,7 @@
 .topUserName {
   font-size: larger;
   margin-left: 15px;
+  margin-right: 15px;
 }
 .topspace {
   height: 114px;
@@ -1217,21 +1229,39 @@ input:focus {
   color: #a6a6a6;
 }
 .LoginContainer {
-  height: 310px;
-  width: 400px;  
+  height: 966px;
+  width: 1793px;  
   display: flex;
+  background-image: url(./img/login_background.png);
+  background-size: cover;
 }
 .LoginUpRowEmptyArea {
   height: 310px;
-  width: 22px;  
+  width: 222px;  
+}
+.LoginUpEmptyArea {
+  height: 265px;
+  width: 356px; 
 }
 .LoginArea {
-  height: 65px;
+  height: 800px;
   width: 356px;  
 }
 .LoginMidEmptyArea {
   height: 30px;
   width: 356px;  
+}
+.LoginEmailArea {
+  height: 55px;
+  width: 356px;
+  display: flex;
+  background-color: #ffffff;
+}
+.LoginPasswordArea {
+  height: 55px;
+  width: 356px;
+  display: flex;
+  background-color: #ffffff;
 }
 .LoginInputImage {
   height: 55px;
@@ -1250,8 +1280,24 @@ input:focus {
 }
 .LoginInputText {
   height: 55px;
-  width: 356px;
+  width: 298px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.LoginButton {
+  height: 55px;
+  width: 356px;
+  background-color: #3C64B1;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
+}
+.LoginButton:hover {
+  height: 55px;
+  width: 356px;
+  background-color: #112344;
+  color: #ffffff;
+  font-size: 20px;
+  border:none;
 }

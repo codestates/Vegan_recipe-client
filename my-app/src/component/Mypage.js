@@ -1,10 +1,73 @@
+
+import { getDefaultNormalizer } from "@testing-library/dom";
+import axios from "axios";
 import { Component } from "react";
 import imgg from "../img/avatar.png";
 import imggg from "../img/inputimage1.png";
 import articleimg from "../img/user.png";
+
+// import { selectRecipe } from '../actions/index';
+// import { useSelector, useDispatch } from 'react-redux';
+
+
+
 class Mypage extends Component {
-  render() {
-    const tempcuruserdata = {
+
+  constructor(props) {
+    super(props);
+    this.state ={
+      email: null,
+      username: null,
+      title:null,
+      content:null
+    }
+
+    this.createRecipe = this.createRecipe.bind(this)
+    this.recipeCreator = this.recipeCreator.bind(this)
+    this.userinfo = this.userinfo.bind(this)
+}
+
+
+  componentDidMount() {
+  this.userinfo();
+  }
+
+  recipeCreator = (key)=>(e) => {
+    this.setState({ [key]: e.target.value });
+  }
+
+
+  userinfo = ()=>{
+      axios.get("http://13.59.132.30:4000/users/userinfo", {
+        headers: {
+          authorization: `Bearer ${this.props.actoken}`,
+          "Content-Type": "application/json",
+        },
+        withCredentials: true,
+      })
+      .then(res =>{
+        this.setState({
+          email : res.data.email, // 수정요함
+          username : res.data.name // 데이터 보고 수정요함.
+        })
+      })
+  }
+
+  createRecipe = ()=>{
+    axios.post("http://13.59.132.30:4000/recipe/CreateRecipe", {
+      user_id: this.state.email,
+      title: this.state.title,
+      content: this.state.content
+    })
+    .then(res => {
+    })
+
+  }
+
+
+render(){
+  console.log(this.props.actoken)
+      const tempcuruserdata = {
       email: "Kimlucky-for@gmail.com",
       username: "KimLucky",
     };
@@ -16,7 +79,7 @@ class Mypage extends Component {
       { username: "KimLucky", article: 140 },
       { username: "KimLucky", article: 140 },
     ];
-
+    
     return (
       <div className="Mypage">
         <div className="MypageLeftArea" />
@@ -28,7 +91,7 @@ class Mypage extends Component {
             <div className="SignupInputImage">
               <img className="SignupImage" src={imgg} alt="" />
             </div>
-            <div className="MypageShowText">{tempcuruserdata.email}</div>
+            <div className="MypageShowText">{this.state.email}</div>
           </div>
           <div className="MypageUpEmptyArea" />
 
@@ -37,7 +100,7 @@ class Mypage extends Component {
             <div className="SignupInputImage">
               <img className="SignupImage" src={imgg} alt="" />
             </div>
-            <div className="MypageShowText">{tempcuruserdata.username}</div>
+            <div className="MypageShowText">{this.state.username}</div>
           </div>
           <div className="SignupInputEmptyArea" />
           <div className="MypageUpEmptyArea" />
@@ -162,7 +225,7 @@ class Mypage extends Component {
               <img alt="" src={imggg} className="MypageInputRecipeImage" />
             </div>
             <div className="MypageInputRecipeTitleArea">
-              <input type="text" placeholder="레시피 이름을 입력해주세요" className="MypageInputRecipeTitleBox"/>
+              <input type="text" placeholder="레시피 이름을 입력해주세요" onChange={this.recipeCreator("title")} className="MypageInputRecipeTitleBox"/>
             </div>
           </div>
           <div className="MypageInputRecipeMidEmptyArea"/>
@@ -175,16 +238,17 @@ class Mypage extends Component {
             </div>
             <div className="MypageInputRecipeContestRightArea">
               <div className="MypageInputRecipeContestRightAreaInEmpty"/>
-              <input type="textarea" className="MypageRecipeContentInput" placeholder="조리방법을 입력해주세요"/>
+              <input type="textarea" className="MypageRecipeContentInput" onChange={this.recipeCreator('content')} placeholder="조리방법을 입력해주세요"/>
               <div className="MypageInputRecipeContestRightAreaInEmpty"/>
             </div>
           </div>
           <div className="MypageInputRecipeMidEmptyArea"/>
 
-          <button className="MypageInputRecipeButton">Create Recipe</button>
+          <button className="MypageInputRecipeButton" onClick={this.createRecipe}>Create Recipe</button>
         </div>
       </div>
     );
   }
 }
+
 export default Mypage;

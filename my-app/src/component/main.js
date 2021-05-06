@@ -1,21 +1,32 @@
-import { Component } from "react";
-import Latest from "./recipe/Latest";
-import Popular from "./recipe/Popular";
-import MainViewRecipe from "./recipe/MainViewRecipe";
+import Latest from "../component/recipes/Latest";
+import Popular from "./recipes/Popular";
+import MainViewRecipe from "./recipes/MainViewRecipe";
 import TopContributors from "./users/TopContributors";
+import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { updateRecipeList } from '../actions/index'
+import React from 'react';
 
-class main extends Component {
 
-  render() {
+function Main () {
+
+  // let result
+
+  // //axios로 recipe 전체 데이터 받아와서 result 에 할당 
+
+  // const dispatch = useDispatch();
+  // dispatch(updateRecipeList(result))
+
+
     return(
-      <div className="main">
+    <div className="main">
     <div className="mainmargin" />
     <div className="midarea">
         <div className="midmargin"/>
         <div className="midcontent">
           <TopContributors/>
           <Popular/>
-          <MainViewRecipe/>
+          <Link to='/recipecomment' style={{ color: 'inherit', textDecoration: 'none' }} > <MainViewRecipe/> </Link>
         </div>
         <div className="midcontent">
           <Latest />
@@ -26,6 +37,6 @@ class main extends Component {
 </div>
     );
   }
-}
 
-export default main;
+
+export default Main;

@@ -1,10 +1,9 @@
-
 import { combineReducers } from 'redux';
+import dataReducer from './dataReducer';
 
 
 const rootReducer = combineReducers({
-   // 생성되는 reducer 종합.
-  });
-
+  dataReducer
+});
 
 export default rootReducer;

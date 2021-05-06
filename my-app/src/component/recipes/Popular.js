@@ -1,9 +1,9 @@
 import { Component } from "react";
 import imgg from '../../img/arrow.png'
 
-class Popular extends Component{
+function Popular (){
 
-  render() {
+
     const tempdata = [
       {name : 'Fruit juices to boost your immune' , good : 140},
       {name : 'Juice variations using avocado', good: 122 }
@@ -39,6 +39,6 @@ class Popular extends Component{
       </div>
     ))}
   }
-}
+
 
 export default Popular;
